@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styleOppgaver.css">
+</head>
+<body>
+    <div id="container_facts">
+     <h1>Hello, my name is Kamila</h1>
+     <h2>There are couple of facts about me</h2>
+      <span id="fact">I'm 26 years old.<br/>
+      I moved to Norway in 2018. <br/>
+      I have bachelor degree in criminology and wrote an article about masking murders and simulating suicides.<br/>
+      Since last year I'm learning Java.</span> <br/>
+      <button onclick="change_background('blue')" class="buttons">Change background </button>
+    </div>
+
+    <div id="container_list">
+     <ol>
+        <li>Reading books</li>
+        <li>Baking cakes</li>
+        <li>Rollerblading</li>
+        <li>Traveling</li>
+        <li>Puzzles</li>
+     </ol>   
+     <br> 
+     <button onclick="change_colorTekstSize(color, tekst)" class="buttons"> </button>
+     <img src="/pictures/sunset.jpeg" alt="Sunset" >
+
+    </div>
+
+
+    <script>
+
+        function change_background(color){
+            document.getElementById('fact1').style.backgroundColor = color;
+        }
+
+        function change_colorTekstSize(color, tekst){
+            document.getElementById('container_list').innerHTML = 
+            <div style="background-color:${color}; width: 100%; height:100%; "></div> ;
+        }
+    </script>
+</body>
+</html>

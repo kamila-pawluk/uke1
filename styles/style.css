@@ -1,0 +1,46 @@
+body { 
+    background-color: #2e2e2e;
+    color: white;
+    /* gap: 20px; */
+    margin: 20;
+    padding: 30;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+}
+#container{
+    background-color: red;
+    width: 200px;
+}
+.paragraphStyle {
+    background-color: blueviolet;
+
+}
+p {
+    background-color: blue;
+}
+span {
+    background-color: green;
+}
+.buttons {
+    /* color: rgb(10, 40, 233);
+    background-color: beige;
+    border: 3px dotted black; */
+    cursor: pointer;
+}
+.list {
+    list-style: inside;
+    /* display: flex;
+    flex-direction: row; */
+}
+img {
+    border-radius: 310px;
+    border: 5px;
+    position: fixed;
+    width: 200px;
+    top: 20px;
+    left: 1px;
+}

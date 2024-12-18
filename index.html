@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <style>  /* Comment in CSS*/  </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Hello world!</h1>
+        <p class="paragraphStyle">Dette er en paragraf</p> 
+        <p>Dette er en paragraf</p> 
+       <!-- shift + option + arrow = duplicate -->
+        <span>Dette er en span tag</span>
+        <span style="background-color: violet;">Dette er en span tag</span>
+       <br> <!--next line-->
+       <hr> <!--separator-->
+        <button onclick="buttonClick()" class="buttons">Dette er en knapp</button>
+        <ul class="list">
+            <li>Ting1</li>
+            <li>Ting2</li>
+            <li>Ting3</li>
+            <li>Ting4</li>
+        </ul>
+        <ol>
+            <li>Ting1</li>
+            <li>Ting2</li>
+            <li>Ting3</li>
+            <li>Ting4</li>
+        </ol>
+        <img src="/pictures/sunset.jpeg" alt="Sunset" >
+    
+
+    </div>
+    <!-- <a href="www.google.no">Dette er en link</a> -->
+
+      <script>
+          function buttonClick(){
+            let num1 = 7;
+            let num2 = 7;
+
+            let sum = num1 + num2;
+
+
+            // alert(num1 + "+" + num2 + "=" sum);
+        alert(`${num1} + ${num2} = ${sum}`);
+          }
+      </script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styleOppgaver.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Welcome on the website!</h1>
+        <h2>Let's discover what's inside</h2>
+        <p style="background-color: rgba(0, 0, 0, 0.292); color: white;">Test area</p>
+   
+ 
+    </div>
+
+    <div id="container1">Reveal the secret. Click the button</div> 
+    <hr><button onclick="button_click()" id="button" class="buttons">Click me!</button>
+
+    <div id="container_numbers"> Click on the left button to increase number, choose the right one to decrease.
+    <br>
+    <div class="number">Number: </div>
+    <br>
+    <div id="output">100</div>
+    
+
+        
+
+    <hr><button onclick="button_increase()" id="button1" class="buttons">Click to increase</button>
+
+    <hr><button onclick="button_decrease()" id="button2" class="buttons">Click to decrease</button>
+
+    
+    </div>
+<br>
+
+     <script>
+       var outputDiv = document.getElementById('output');
+       var numberToChange = 100;
+
+
+        function button_click(){
+            document.getElementById('container1').innerHTML = "Winter is coming!";
+        }
+
+
+        function button_increase(){
+            numberToChange++;
+            outputDiv.innerHTML = numberToChange;
+        }
+
+        function button_decrease(){
+            numberToChange--;
+            outputDiv.innerHTML = numberToChange;
+        }
+
+     </script>
+
+
+     
+</body>
+</html>
